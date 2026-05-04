@@ -1,85 +1,93 @@
 # synent-task4-CSVtoDashboard-sivabarani
-Universal CSV Dashboard (Streamlit)
 
-A dynamic and interactive CSV data visualization dashboard built using Streamlit, Pandas, Seaborn, and Matplotlib.
+# Universal CSV Dashboard
 
-This app allows users to upload any CSV file and instantly explore, analyze, and visualize the dataset without writing code.
+An interactive data visualization dashboard built using Streamlit.  
+This application allows users to upload any CSV file and perform quick exploratory data analysis (EDA) with dynamic visualizations.
 
-Features
-File Upload
-Upload any CSV file dynamically
-Supports real-time data loading
-Data Overview
-Dataset preview (first 5 rows)
-Column data types
-Missing values summary
-Data Cleaning (Automatic)
-Numeric columns → Missing values filled with median
-Categorical columns → Missing values filled with "Unknown"
-Interactive Filtering
-Sidebar filters based on categorical columns
-Select specific category values to filter dataset
-Visualizations
-1. Categorical Distribution
-Bar chart of top categories
-Automatically removes "Unknown" values
-2. Numeric Distribution
-Histogram using Seaborn
-Adjustable bins (default: 30)
-3. Scatter Plot
-Compare two numeric features
-Handles:
-Same column selection
-No variation data
-Empty filtered data
-4. Correlation Heatmap
-Displays correlation between numeric features
-Annotated heatmap for better insights
-Tech Stack
-Python
-Streamlit
-Pandas
-Seaborn
-Matplotlib
-Installation
-1. Clone the Repository
-git clone https://github.com/your-username/csv-dashboard.git
-cd csv-dashboard
-2. Install Dependencies
+---
+
+## Features
+
+- Upload any CSV file
+- View dataset preview (first 5 rows)
+- Display column data types
+- Show missing values summary
+- Automatic missing value handling:
+  - Numeric columns filled with median
+  - Categorical columns filled with "Unknown"
+- Sidebar filtering based on categorical columns
+- Data visualizations:
+  - Categorical distribution (bar chart)
+  - Numeric distribution (histogram)
+  - Scatter plot for numeric relationships
+  - Correlation heatmap
+
+---
+
+## Tech Stack
+
+- Python
+- Streamlit
+- Pandas
+- Seaborn
+- Matplotlib
+
+---
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/universal-csv-dashboard.git
+cd universal-csv-dashboard
+
+### Install dependencies:
+
 pip install -r requirements.txt
 
 Or install manually:
 
 pip install streamlit pandas seaborn matplotlib
-Run the App
+
+### Usage
+
+#### Run the application:
+
 streamlit run app.py
-Project Structure
-csv-dashboard/
-│
-├── app.py              # Main Streamlit application
-├── README.md           # Project documentation
-└── requirements.txt    # Dependencies
-How It Works
+
+### Steps to use:
+
 Upload a CSV file
-View dataset summary
-Apply filters from sidebar
+View dataset information
+Apply filters from the sidebar
 Explore visualizations
-Limitations
-Only supports CSV files
-Large datasets may slow down rendering
+
+### Project Structure
+universal-csv-dashboard/
+│
+├── app.py
+├── README.md
+└── requirements.txt
+
+### Data Handling
+Numeric columns: Missing values are filled with median
+Categorical columns: Missing values are filled with "Unknown"
+### Limitations
+Supports only CSV files
+Performance may degrade with very large datasets
 No advanced preprocessing (encoding, scaling, etc.)
 Future Improvements
-Add:
 Download filtered dataset
 Advanced filtering (range sliders)
-Time series analysis
-ML model integration
-Auto insights (EDA summary)
-Use Cases
-Quick Exploratory Data Analysis (EDA)
-Data Science beginners
-Business analytics dashboards
-Interview/demo projects
-License
+Time-series analysis
+Machine learning integration
+Automated EDA reports
 
-This project is open-source and free to use.
+### Use Cases
+Quick exploratory data analysis (EDA)
+Data science learning projects
+Business data exploration
+Portfolio or demo projects
+
+---
